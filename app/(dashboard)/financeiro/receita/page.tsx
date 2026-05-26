@@ -6,6 +6,8 @@ import { Card } from '@/components/ui/card'
 import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { brl, pct } from '@/lib/format'
 
+export const dynamic = 'force-dynamic'
+
 type Receita = { id: string; natureza_receita: string; categoria: string; valor_previsto: number; valor_arrecadado: number }
 
 export default function ReceitaPage() {

@@ -8,6 +8,8 @@ import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { brl, dateBR, daysUntil } from '@/lib/format'
 import { AlertTriangle } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 type Contrato = { id: string; numero: string; fornecedor: string; objeto: string | null; valor_total: number; data_inicio: string; data_fim: string; status: string }
 
 const statusStyle: Record<string, string> = {

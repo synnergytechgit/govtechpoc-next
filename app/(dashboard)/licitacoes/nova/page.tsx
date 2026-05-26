@@ -12,6 +12,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { PageHeader } from '@/components/PageHeader'
 import { ArrowLeft } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 export default function NovaLicitacaoPage() {
   const router = useRouter()
   const supabase = createClient()

@@ -10,6 +10,8 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 import { TrendingUp, TrendingDown, FileCheck, MessageSquareWarning } from 'lucide-react'
 import { Progress } from '@/components/ui/progress'
 
+export const dynamic = 'force-dynamic'
+
 const statusEmpenho: Record<string, string> = {
   emitido: 'bg-blue-100 text-blue-800 hover:bg-blue-100',
   liquidado: 'bg-amber-100 text-amber-800 hover:bg-amber-100',

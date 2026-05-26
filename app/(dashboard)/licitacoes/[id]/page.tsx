@@ -10,6 +10,8 @@ import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { brl, dateBR } from '@/lib/format'
 import { ArrowLeft } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 type Licitacao = { id: string; numero_processo: string; modalidade: string; objeto: string | null; valor_estimado: number | null; data_abertura: string | null; status: string; edital: string | null; uasg: string | null; criado_em: string }
 type Participante = { id: string; nome: string; cnpj: string | null; proposta: number | null; situacao: string | null }
 

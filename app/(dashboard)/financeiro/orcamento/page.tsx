@@ -6,6 +6,8 @@ import { Card } from '@/components/ui/card'
 import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { brl, pct } from '@/lib/format'
 
+export const dynamic = 'force-dynamic'
+
 type Dotacao = { id: string; secretaria: string; natureza_despesa: string; valor_dotacao_inicial: number; valor_empenhado: number }
 
 export default function OrcamentoPage() {

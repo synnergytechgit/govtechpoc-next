@@ -8,6 +8,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { brl, dateBR } from '@/lib/format'
 
+export const dynamic = 'force-dynamic'
+
 type Empenho = { id: string; numero_empenho: string; data_empenho: string; fornecedor: string; cnpj: string | null; objeto: string | null; valor: number; status: string }
 
 const statusStyle: Record<string, string> = {

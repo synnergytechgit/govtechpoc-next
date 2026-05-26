@@ -14,6 +14,8 @@ import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { dateBR, daysUntil } from '@/lib/format'
 import { Plus, AlertCircle } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 type Manifestacao = { id: string; protocolo: string | null; tipo: string; descricao: string; solicitante: string | null; status: string; prazo_resposta: string | null; criado_em: string }
 
 const statusStyle: Record<string, string> = {

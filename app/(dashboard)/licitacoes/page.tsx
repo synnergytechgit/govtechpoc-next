@@ -13,6 +13,8 @@ import { PageHeader, EmptyState, LoadingState } from '@/components/PageHeader'
 import { brl, dateBR } from '@/lib/format'
 import { Plus, Search } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 type Licitacao = { id: string; numero_processo: string; modalidade: string; objeto: string | null; valor_estimado: number | null; data_abertura: string | null; status: string }
 
 const statusStyle: Record<string, string> = {
