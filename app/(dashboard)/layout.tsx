@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import {
   LayoutDashboard, Wallet, FileText, MessageSquare, LogOut,
-  Building2, ChevronDown, ChevronRight, Gavel,
+  Building2, ChevronDown, ChevronRight, Gavel, HardHat, Users, Target,
 } from 'lucide-react'
 
 type Item = { href: string; label: string; icon: React.ComponentType<{ className?: string }> }
@@ -23,6 +23,9 @@ const tailItems: Item[] = [
   { href: '/contratos',  label: 'Contratos',  icon: FileText },
   { href: '/licitacoes', label: 'Licitações', icon: Gavel },
   { href: '/ouvidoria',  label: 'Ouvidoria',  icon: MessageSquare },
+  { href: '/obras', label: 'Obras', icon: HardHat },
+  { href: '/servidores', label: 'Servidores', icon: Users },
+  { href: '/planejamento', label: 'Planejamento', icon: Target },
 ]
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
