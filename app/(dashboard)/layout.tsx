@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils'
 import {
   LayoutDashboard, Wallet, FileText, MessageSquare, LogOut,
   Building2, ChevronDown, ChevronRight, Gavel, HardHat, Users, Target,
-  Eye, Heart, Activity,
+  Eye, Heart, Activity, GraduationCap, Landmark, Receipt,
 } from 'lucide-react'
 
 type Item = { href: string; label: string; icon: React.ComponentType<{ className?: string }> }
@@ -26,6 +26,9 @@ const tailItems: Item[] = [
   { href: '/transparencia', label: 'Transparência',   icon: Eye },
   { href: '/assistencia',  label: 'Assistência Social', icon: Heart },
   { href: '/saude',        label: 'Saúde',            icon: Activity },
+  { href: '/educacao',     label: 'Educação',         icon: GraduationCap },
+  { href: '/gabinete',     label: 'Gabinete',         icon: Landmark },
+  { href: '/tributacao',   label: 'Tributação',       icon: Receipt },
   { href: '/ouvidoria',    label: 'Ouvidoria',        icon: MessageSquare },
   { href: '/obras',        label: 'Obras',            icon: HardHat },
   { href: '/servidores',   label: 'Servidores',       icon: Users },
