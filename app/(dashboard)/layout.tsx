@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils'
 import {
   LayoutDashboard, Wallet, FileText, MessageSquare, LogOut,
   Building2, ChevronDown, ChevronRight, Gavel, HardHat, Users, Target,
+  Eye, Heart, Activity,
 } from 'lucide-react'
 
 type Item = { href: string; label: string; icon: React.ComponentType<{ className?: string }> }
@@ -20,12 +21,15 @@ const finItems: Item[] = [
   { href: '/financeiro/empenhos', label: 'Empenhos', icon: Wallet },
 ]
 const tailItems: Item[] = [
-  { href: '/contratos',  label: 'Contratos',  icon: FileText },
-  { href: '/licitacoes', label: 'Licitações', icon: Gavel },
-  { href: '/ouvidoria',  label: 'Ouvidoria',  icon: MessageSquare },
-  { href: '/obras', label: 'Obras', icon: HardHat },
-  { href: '/servidores', label: 'Servidores', icon: Users },
-  { href: '/planejamento', label: 'Planejamento', icon: Target },
+  { href: '/contratos',    label: 'Contratos',        icon: FileText },
+  { href: '/licitacoes',   label: 'Licitações',       icon: Gavel },
+  { href: '/transparencia', label: 'Transparência',   icon: Eye },
+  { href: '/assistencia',  label: 'Assistência Social', icon: Heart },
+  { href: '/saude',        label: 'Saúde',            icon: Activity },
+  { href: '/ouvidoria',    label: 'Ouvidoria',        icon: MessageSquare },
+  { href: '/obras',        label: 'Obras',            icon: HardHat },
+  { href: '/servidores',   label: 'Servidores',       icon: Users },
+  { href: '/planejamento', label: 'Planejamento',     icon: Target },
 ]
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
