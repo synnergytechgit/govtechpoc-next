@@ -12,7 +12,7 @@ import {
   LayoutDashboard, Wallet, FileText, MessageSquare,
   LogOut, Building2, ChevronDown, ChevronRight,
   Gavel, HardHat, Users, Target, Eye, Heart,
-  Activity, GraduationCap, Landmark, Receipt, Shield
+  Activity, GraduationCap, Landmark, Receipt, Shield, UserCog
 } from 'lucide-react'
 
 type Papel = 'superadmin'|'prefeito'|'secretario'|'controlador'|'servidor'|'cidadao'
@@ -52,6 +52,7 @@ const tailItems: Item[] = [
   { href: '/tributacao',   label: 'Tributação',        icon: Receipt,       papeis: ['superadmin','prefeito','secretario','controlador'] },
   { href: '/ouvidoria',    label: 'Ouvidoria',         icon: MessageSquare, papeis: ['superadmin','prefeito','secretario','controlador','servidor'] },
   { href: '/auditoria',    label: 'Auditoria',         icon: Shield,        papeis: ['superadmin','prefeito','controlador'] },
+  { href: '/usuarios',     label: 'Usuários',          icon: UserCog,       papeis: ['superadmin','prefeito'] },
 ]
 
 const PAPEL_LABELS: Record<Papel, { label: string; color: string }> = {
