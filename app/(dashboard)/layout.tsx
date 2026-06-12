@@ -50,6 +50,8 @@ const tailItems: Item[] = [
   { href: '/educacao',     label: 'Educação',          icon: GraduationCap, papeis: ['superadmin','prefeito','secretario','servidor'] },
   { href: '/gabinete',     label: 'Gabinete',          icon: Landmark,      papeis: ['superadmin','prefeito','secretario'] },
   { href: '/tributacao',   label: 'Tributação',        icon: Receipt,       papeis: ['superadmin','prefeito','secretario','controlador'] },
+  { href: '/fornecedores', label: 'Fornecedores',       icon: Building2,     papeis: ['superadmin','prefeito','secretario','controlador','servidor'] },
+  { href: '/notas-fiscais',label: 'Notas Fiscais',      icon: Receipt,       papeis: ['superadmin','prefeito','secretario','controlador','servidor'] },
   { href: '/ouvidoria',    label: 'Ouvidoria',         icon: MessageSquare, papeis: ['superadmin','prefeito','secretario','controlador','servidor'] },
   { href: '/auditoria',    label: 'Auditoria',         icon: Shield,        papeis: ['superadmin','prefeito','controlador'] },
   { href: '/usuarios',     label: 'Usuários',          icon: UserCog,       papeis: ['superadmin','prefeito'] },
